@@ -1,0 +1,14 @@
+**/*.svg
+**/*.ico
+.eslintignore
+*.png
+*.toml
+.gitignore
+.prettierignore
+LICENSE
+.eslintcache
+*.lock
+*.yaml
+server/*.js
+dist
+public
