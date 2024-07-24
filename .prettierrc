@@ -10,5 +10,8 @@
    "arrowParens": "always",
    "jsxSingleQuote": false,
    "bracketSameLine": false,
-   "endOfLine": "lf"
+   "endOfLine": "lf",
+   "plugins": ["prettier-plugin-tailwindcss"],
+   "tailwindFunctions": ["clsx"],
+   "tailwindConfig": "./tailwind.config.ts"
 }

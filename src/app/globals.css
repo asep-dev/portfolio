@@ -2,16 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-   --foreground-rgb: 0, 0, 0;
-   --background-start-rgb: 214, 219, 220;
-   --background-end-rgb: 255, 255, 255;
+@layer base {
+   /* Hex Primary #257BF4 */
+   /* Hex Black #020507 */
+   /* Hex White #FDFFFC */
+   /* Hex White - Foreground #f8FAFC */
+   /* Hex Gray ##EDEDEE */
+   /* Hex Yellow ##F7E257 */
+
+   :root {
+      --color-white: 253 255 252;
+      --color-black: 2 5 7;
+      --color-background: 253 255 252;
+      --color-foreground: 2 5 7;
+      --color-primary: 37 123 244;
+      --color-gray: 237 237 238;
+      /* --muted: 210 40% 96.1%; */
+      --color-yellow: 255 194 87;
+      --border: 237 237 238;
+      --radius: 0.5rem;
+   }
+   .dark {
+      --color-background: 2 5 7;
+      --color-foreground: 253 255 252;
+      --color-yellow: 255 194 87;
+      /* --muted: 217.2 32.6% 17.5%; */
+      --border: 237 237 238;
+   }
 }
 
-@media (prefers-color-scheme: dark) {
-   :root {
-      --foreground-rgb: 255, 255, 255;
-      --background-start-rgb: 0, 0, 0;
-      --background-end-rgb: 0, 0, 0;
-   }
+.overflow-y-bar-hide::-webkit-scrollbar {
+   width: 0;
+}
+
+.bg-ss {
+   /* <a href="https://www.freepik.com/free-ai-image/3d-rendering-abstract-black-white-background_75954081.htm#fromView=search&page=2&position=25&uuid=81ddd932-70e1-42c0-8a6c-6106c533c506">Image by freepik</a> */
+   background-image: url(https://t3.ftcdn.net/jpg/05/81/68/70/360_F_581687015_N6hz4vzNiLtV0SUFHOavQkhF7ULEtG2X.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
 }
